@@ -24,5 +24,10 @@ namespace exemploapp
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _ = MessageBox.Show("Olá");
+        }
     }
 }
