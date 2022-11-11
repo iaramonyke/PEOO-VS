@@ -25,13 +25,13 @@
                 </Grid.ColumnDefinitions>
                 <TextBox Name="txtNumBolas" IsReadOnly="True" Margin="4" Grid.Column="1" Text="50" VerticalAlignment="Center"/>
                 <Slider Name="slider" Margin="4" VerticalAlignment="Center" Maximum="100" Minimum="10" Value="50" ValueChanged="Slider_ValueChanged" TickFrequency="5" IsSnapToTickEnabled="True"/>
-                <Button Margin="4" Grid.Column="2" Content="Iniciar"/>
+                <Button x:Name="btnIniciar" Margin="4" Grid.Column="2" Content="Iniciar" Click="Button_Click_2"/>
             </Grid>
         </GroupBox>
-        <Button Content="Sortear" Grid.Row="1" Margin="4" Click="Button_Click"/>
-        <TextBox Text="35" IsReadOnly="True" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="btnSortear" Content="Sortear" Grid.Row="1" Margin="4" Click="Button_Click_1" IsEnabled="False"/>
+        <TextBox x:Name="txtNum" Text="35" IsReadOnly="True" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1"/>
         <GroupBox Header="Sorteados" Margin="4" Grid.ColumnSpan="2" Grid.Row="2">
-            <TextBox Text="1 - 2 - 3 - 4" IsReadOnly="True"/>
+            <TextBox x:Name="txtSorteados" Text="1 - 2 - 3 - 4" IsReadOnly="True" TextWrapping="Wrap"/>
         </GroupBox>
 
 
