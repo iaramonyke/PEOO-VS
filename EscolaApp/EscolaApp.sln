@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaApp", "EscolaApp\EscolaApp.csproj", "{C5C9E8CE-D86D-45E4-97A0-CA1508EEDB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolaApp", "EscolaApp\EscolaApp.csproj", "{C5C9E8CE-D86D-45E4-97A0-CA1508EEDB65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8A65D9E-C9D9-4385-8624-CE44559369A6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		NProfessor.cs = NProfessor.cs
+		Professor.cs = Professor.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5C9E8CE-D86D-45E4-97A0-CA1508EEDB65} = {F8A65D9E-C9D9-4385-8624-CE44559369A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E9BD192-4812-4406-BA48-94FA44FBCDDA}
