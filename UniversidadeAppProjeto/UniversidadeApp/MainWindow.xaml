@@ -1,0 +1,20 @@
+﻿<Window x:Class="UniversidadeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversidadeApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <Button Content="Cadastrar Universidade" HorizontalAlignment="Left" Height="35" Margin="64,114,0,0" VerticalAlignment="Top" Width="162" Click="Cadastro_uni_Click"/>
+        <Button Content="Cadastrar Departamento" HorizontalAlignment="Left" Height="35" Margin="64,165,0,0" VerticalAlignment="Top" Width="162" Click="Cadastro_dep_Click"/>
+        <Button Content="Cadastrar Curso" HorizontalAlignment="Left" Height="35" Margin="64,217,0,0" VerticalAlignment="Top" Width="162" Click="Cadastro_curso_Click"/>
+        <Button Content="Cadastrar Departamento na Universidade" HorizontalAlignment="Left" Height="35" Margin="269,165,0,0" VerticalAlignment="Top" Width="248" Click="dep_uni_Click"/>
+        <Button Content="Cadastrar Curso no Departamento" HorizontalAlignment= "Left" Height="35" Margin="269,114,0,0" VerticalAlignment="Top" Width="248" Click="curso_dep_Click"/>
+        <Button Content="Listar Departamentos da Universidade" HorizontalAlignment="Left" Height="35" Margin="269,217,0,0" VerticalAlignment="Top" Width="248" Click="list_dep_Click"/>
+        <Button Content="Listar Cursos do Departamento" HorizontalAlignment="Left" Height="35" Margin="269,271,0,0" VerticalAlignment="Top" Width="248" Click="list_curso_Click"/>
+        <TextBlock FontSize="25" HorizontalAlignment="Left" Height="38" Margin="64,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"><Run Language="pt-br" Text="Cadastros"/></TextBlock>
+        <TextBlock FontSize="25" HorizontalAlignment="Left" Height="38" Margin="269,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"><Run Language="pt-br" Text="Operações"/></TextBlock>
+    </Grid>
+</Window>
