@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="CursosWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock FontSize="20"  HorizontalAlignment="Left" Margin="21,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Id:"/></TextBlock>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="20,58,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="30"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="104,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Nome:"/></TextBlock>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="102,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="244,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Duração:"/></TextBlock>
+        <TextBox x:Name="txtDuracao" HorizontalAlignment="Center" Margin="244,58,428,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="378,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Código:"/></TextBlock>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Margin="378,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+
+        <Button FontSize="20" Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="23,115,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="20" Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="101,115,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="20" Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="170,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.012,0.753"/>
+        <Button FontSize="20" Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="266,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.231,0.557"/>
+        <ListBox x:Name="listCursos" Margin="22,168,16,10" SelectionChanged="listCursos_SelectionChanged"/>
     </Grid>
 </Window>

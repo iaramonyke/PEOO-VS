@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\20211011110040\Source\Repos\PEOO-VS\UniversidadeAppProjeto\UniversidadeApp\obj\Debug\
+C:\Users\20211011110040\Source\Repos\PEOO-VS\UniversidadeAppProjeto\UniversidadeApp\obj\Release\
 UniversidadeApp
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\20211011110040\Source\Repos\PEOO-VS\UniversidadeAppProjeto\UniversidadeApp\App.xaml
 81002684053
 
-13315520810
+121157880177
 13-1505183044
 Cadastrar_Cursos_DepWindow.xaml;Cadastrar_Dep_UniWindow.xaml;CursosWindow.xaml;DepartamentoWindow.xaml;List_Cursos_DepWindow.xaml;List_Dep_UniWindow.xaml;MainWindow.xaml;UniversidadeWindow.xaml;
 
-False
+True
 

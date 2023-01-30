@@ -39,5 +39,36 @@ namespace UniversidadeApp
             listUniversidade.ItemsSource = null;
             listUniversidade.ItemsSource = NUniversidade.Listar();
         }
+
+        private void AtualizarClick(object sender, RoutedEventArgs e)
+        {
+            Universidade u = new Universidade();
+            u.Id = int.Parse(txtId.Text);
+            u.Nome = txtNome.Text;
+            u.Sigla = txtSigla.Text;
+            NUniversidade.Atualizar(u);
+            ListarClick(sender, e);
+
+        }
+
+        private void ExcluirClick(object sender, RoutedEventArgs e)
+        {
+            Universidade u = new Universidade();
+            u.Id = int.Parse(txtId.Text);
+            NUniversidade.Excluir(u);
+            ListarClick(sender, e);
+
+        }
+
+        private void listTurmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listUniversidade.SelectedItem != null)
+            {
+                Universidade obj = (Universidade)listUniversidade.SelectedItem;
+                txtId.Text = obj.Id.ToString();
+                txtNome.Text = obj.Nome;
+                txtSigla.Text = obj.Sigla;
+            }
+        }
     }
 }

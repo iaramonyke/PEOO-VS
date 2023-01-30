@@ -23,5 +23,52 @@ namespace UniversidadeApp
         {
             InitializeComponent();
         }
+
+        private void InserirClick(object sender, RoutedEventArgs e)
+        {
+            Cursos c = new Cursos();
+            c.Id = int.Parse(txtId.Text);
+            c.Nome = txtNome.Text;
+            c.Duracao = txtDuracao.Text;
+            c.Codigo = txtCodigo.Text;
+            NCursos.Inserir(c);
+            ListarClick(sender, e);
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            listCursos.ItemsSource = null;
+            listCursos.ItemsSource = NCursos.Listar();
+        }
+
+        private void AtualizarClick(object sender, RoutedEventArgs e)
+        {
+            Cursos c = new Cursos();
+            c.Id = int.Parse(txtId.Text);
+            c.Nome = txtNome.Text;
+            c.Duracao = txtSigla.Text;
+            c.Codigo = txtCodigo.Text;
+            NCursos.Atualizar(c);
+            ListarClick(sender, e);
+        }
+
+        private void ExcluirClick(object sender, RoutedEventArgs e)
+        {
+            Cursos c = new Cursos();
+            c.Id = int.Parse(txtId.Text);
+            NCursos.Excluir(c);
+            ListarClick(sender, e);
+        }
+
+        private void listCursos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listCursos.SelectedItem != null)
+            {
+                Cursos obj = (Cursos)listCursos.SelectedItem;
+                txtId.Text = obj.Id.ToString();
+                txtNome.Text = obj.Nome;
+                txtDuracao.Text = obj.Duracao;
+                txtCodigo.Text = obj.Codigo.ToString();
+            }
+        }
     }
-}

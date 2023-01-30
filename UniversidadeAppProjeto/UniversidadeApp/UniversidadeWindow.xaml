@@ -10,7 +10,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="21,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Id:"/></TextBlock>
         <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="21,39,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
         <TextBlock HorizontalAlignment="Left" Margin="87,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Nome:"/></TextBlock>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="87,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="87,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNome_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="233,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Sigla:"/></TextBlock>
         <TextBox x:Name="txtSigla" HorizontalAlignment="Left" Margin="233,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="49,85,0,0" VerticalAlignment="Top" Width="80"/>

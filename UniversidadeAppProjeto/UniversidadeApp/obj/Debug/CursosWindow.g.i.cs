@@ -40,6 +40,46 @@ namespace UniversidadeApp {
     /// </summary>
     public partial class CursosWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 11 "..\..\CursosWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox txtId;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 13 "..\..\CursosWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox txtNome;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 15 "..\..\CursosWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox txtDuracao;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 17 "..\..\CursosWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox txtCodigo;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 23 "..\..\CursosWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox listCursos;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +108,62 @@ namespace UniversidadeApp {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.txtId = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 2:
+            this.txtNome = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 3:
+            this.txtDuracao = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 4:
+            this.txtCodigo = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 5:
+            
+            #line 19 "..\..\CursosWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.InserirClick);
+            
+            #line default
+            #line hidden
+            return;
+            case 6:
+            
+            #line 20 "..\..\CursosWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ListarClick);
+            
+            #line default
+            #line hidden
+            return;
+            case 7:
+            
+            #line 21 "..\..\CursosWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.AtualizarClick);
+            
+            #line default
+            #line hidden
+            return;
+            case 8:
+            
+            #line 22 "..\..\CursosWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ExcluirClick);
+            
+            #line default
+            #line hidden
+            return;
+            case 9:
+            this.listCursos = ((System.Windows.Controls.ListBox)(target));
+            
+            #line 23 "..\..\CursosWindow.xaml"
+            this.listCursos.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.listCursos_SelectionChanged);
+            
+            #line default
+            #line hidden
+            return;
+            }
             this._contentLoaded = true;
         }
     }
